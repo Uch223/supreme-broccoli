@@ -1,0 +1,169 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;;
+    color: whitesmoke;
+    
+}
+/* This is the landing page  */
+.landing {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(./sl_031420_28950_10.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    backdrop-filter: blur(7px);
+}
+/* this is the starting of the header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    background: #00000021;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(31px);
+    box-shadow: 0 15px 20px rgba(28, 51, 79, 0.181);
+}
+header img {
+    
+    position: absolute;
+    width: 17VW;
+    left: 6VW;
+    
+}
+/* this is the navigation bar inside the header */
+.nav a {
+    position: relative;
+    font-size: 1.1em;
+    color:whitesmoke;
+    text-decoration: none;
+    font-weight: 100;
+    margin-left: 40px;
+    left: 40VW;
+}
+.nav .btnlogin {
+    position: relative;
+    left: 40VW;
+}
+.nav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -6px;
+    height: 3px;
+    background: #DA6025;
+    border-radius: 5dvh;
+    transform: scaleX(0);
+    transition: .5s;
+}
+.nav a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+/* tis is the login button at the top */
+.nav .btnlogin{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: size 1.1em; 
+    color: #fff;
+    font-weight: 500;
+    margin-left: 50px;
+    font-family: inherit;
+    transition: .5s;
+}
+.nav .btnlogin:hover{
+    background-color: #DA6025;
+    color: rgb(f,f,f);
+    font-weight: 600;
+    font-size: 1.1em;
+    border: none;
+}
+/* this is the end of the navigation */
+/* this is the main page "lading page content" */
+.Main {
+    position:absolute;
+    width: 100%;
+    padding: 20px 100px;
+    top: 150px;
+    text-align: justify;
+}
+.Main h1 {
+    font-size: 5vw;
+    font-weight: 900;
+    color:#DA6025;
+     font-family: 'Montserrat', sans-serif;
+}
+.Main h2{
+    font-size: 2vw;
+    font-weight:900;
+    font-family: Montserrat;
+    padding-bottom: 10px;
+    color:rgb(218, 213, 213);   
+}
+.Main p {
+    font-size: 1.2vw;
+    line-height: 26px;
+    color: rgb(194, 188, 188);
+    padding-bottom: 20px;
+    font-family: roboto;
+    font-weight: 800;
+}
+/* this is the button on the submit */
+.Main button {
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #c7bebe;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size:  1.1em; 
+    color: #fff;
+    font-weight: 500;
+    margin-left: 0px;
+    transition: .5s;
+    font-family: roboto;
+}
+.Main button:hover{
+    color: rgb(000);
+    font-weight: 900;
+    background-color:#DA6025;
+    border: none;
+    font-size:1.3em;
+}
+/* this is the end of the button */
+/* this is the flet svg by the right of the page */
+.devimg img{
+    width:40vw;
+    height: 40vw;
+    position: relative;
+    top: 5.8vmax;
+    left: 23rem;
+}
+.drop_down{
+    width: 80vw;
+    height: 6vw;
+    flex-shrink: 0;
+    border-radius: 0.29363rem;
+    background: #2F235A;
+    box-shadow: 29px 29px 20px 20px rgba(0, 0, 0, 0.22);
+    top: 48.910vw;
+    position: fixed;
+    left: 10vw;
+
+    }
